@@ -1,0 +1,38 @@
+---
+- name: Set up local workstation
+  hosts: local
+  roles:
+    - role: geerlingguy.mac.homebrew
+      tags:
+        - brew
+        - bootstrap
+    - role: brew
+      tags:
+        - brew
+        - bootstrap
+    - role: dotfiles
+      tags:
+        - dotfiles
+    - role: gem
+      tags:
+        - gem
+        - bootstrap
+    - role: npm
+      tags:
+        - npm
+        - bootstrap
+    - role: mas
+      tags:
+        - mas
+        - bootstrap
+    - role: macos
+      tags:
+        - macos
+        - bootstrap
+    - role: pip
+      tags:
+        - pip
+        - bootstrap
+#   - role: docker
+#     tags:
+#       - docker

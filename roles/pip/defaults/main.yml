@@ -1,0 +1,6 @@
+---
+packages:
+  - beautifulsoup4
+  - docker
+  - mkdocs
+  - mkdocs-material
